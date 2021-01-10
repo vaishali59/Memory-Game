@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="style.css" rel="stylesheet">
+  <script src = "myscript.js" async></script>
+  <title>Memory-Game</title>
+</head>
+<body>
+  <h1 class="page-title">Memory-Game</h1>
+  <div class="overlay-text visible">
+    Click to Start
+  </div>
+  <div id="game-over-text" class="overlay-text">
+    GAME OVER
+    <span class="overlay-text-small">Click to Restart</span>
+  </div>
+  <div id="victory-text" class="overlay-text">
+    VICTORY
+    <span class="overlay-text-small">Click to Restart</span>
+  </div>
+  <div class="game-container"> <! -- container for whole game-->
+    <div class="game-info-container"> <! -- container for info like time & flips-->
+      <div class="game-info"> <! -- the containers for individual info like this one is for Time -->
+        Time <span id="time-remaining">100</span>
+      </div>
+      <div class="game-info"> <! -- the containers for individual info like this one is for Flips -->
+        Flips <span id="flips">0</span>
+      </div>
+    </div>
+    <div class="card" >
+      <div class="card-back card-face">
+        <img class="flower flower-top-left" src="Assets/Images/flower.png">
+        <img class="flower flower-bottom-right" src="Assets/Images/flower.png">
+        <img class="js" src="Assets/Images/flower1.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="Assets/Images/coconut.png">
+      </div>
+    </div>
+    <div class="card" >
+      <div class="card-back card-face">
+        <img class="flower flower-top-left" src="Assets/Images/flower.png">
+        <img class="flower flower-bottom-right" src="Assets/Images/flower.png">
+        <img class="js" src="Assets/Images/flower1.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="Assets/Images/coconut.png">
+      </div>
+    </div>
+    <div class="card" >
+      <div class="card-back card-face">
+        <img class="flower flower-top-left" src="Assets/Images/flower.png">
+
+        <img class="flower flower-bottom-right" src="Assets/Images/flower.png">
+        <img class="js" src="Assets/Images/flower1.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="Assets/Images/shirt.png">
+      </div>
+    </div>
+    <div class="card" >
+      <div class="card-back card-face">
+        <img class="flower flower-top-left" src="Assets/Images/flower.png">
+
+        <img class="flower flower-bottom-right" src="Assets/Images/flower.png">
+        <img class="js" src="Assets/Images/flower1.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="Assets/Images/shirt.png">
+      </div>
+    </div>
+    <div class="card" >
+      <div class="card-back card-face">
+        <img class="flower flower-top-left" src="Assets/Images/flower.png">
+
+        <img class="flower flower-bottom-right" src="Assets/Images/flower.png">
+        <img class="js" src="Assets/Images/flower1.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="Assets/Images/turtle.png">
+      </div>
+    </div>
+    <div class="card" >
+      <div class="card-back card-face">
+        <img class="flower flower-top-left" src="Assets/Images/flower.png">
+
+        <img class="flower flower-bottom-right" src="Assets/Images/flower.png">
+        <img class="js" src="Assets/Images/flower1.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="Assets/Images/turtle.png">
+      </div>
+    </div>
+    <div class="card" >
+      <div class="card-back card-face">
+        <img class="flower flower-top-left" src="Assets/Images/flower.png">
+
+        <img class="flower flower-bottom-right" src="Assets/Images/flower.png">
+        <img class="js" src="Assets/Images/flower1.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="Assets/Images/tikki.png">
+      </div>
+    </div>
+    <div class="card" >
+      <div class="card-back card-face">
+        <img class="flower flower-top-left" src="Assets/Images/flower.png">
+
+        <img class="flower flower-bottom-right" src="Assets/Images/flower.png">
+        <img class="js" src="Assets/Images/flower1.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="Assets/Images/tikki.png">
+      </div>
+    </div>
+    <div class="card" >
+      <div class="card-back card-face">
+        <img class="flower flower-top-left" src="Assets/Images/flower.png">
+
+        <img class="flower flower-bottom-right" src="Assets/Images/flower.png">
+        <img class="js" src="Assets/Images/flower1.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="Assets/Images/surf.png">
+      </div>
+    </div>
+    <div class="card" >
+      <div class="card-back card-face">
+        <img class="flower flower-top-left" src="Assets/Images/flower.png">
+
+        <img class="flower flower-bottom-right" src="Assets/Images/flower.png">
+        <img class="js" src="Assets/Images/flower1.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="Assets/Images/surf.png">
+      </div>
+    </div>
+    <div class="card" >
+      <div class="card-back card-face">
+        <img class="flower flower-top-left" src="Assets/Images/flower.png">
+
+        <img class="flower flower-bottom-right" src="Assets/Images/flower.png">
+        <img class="js" src="Assets/Images/flower1.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="Assets/Images/doll.png">
+      </div>
+    </div>
+    <div class="card" >
+      <div class="card-back card-face">
+        <img class="flower flower-top-left" src="Assets/Images/flower.png">
+
+        <img class="flower flower-bottom-right" src="Assets/Images/flower.png">
+        <img class="js" src="Assets/Images/flower1.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="Assets/Images/doll.png">
+      </div>
+    </div>
+    <div class="card" >
+      <div class="card-back card-face">
+        <img class="flower flower-top-left" src="Assets/Images/flower.png">
+
+        <img class="flower flower-bottom-right" src="Assets/Images/flower.png">
+        <img class="js" src="Assets/Images/flower1.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="Assets/Images/luau.png">
+      </div>
+    </div>
+    <div class="card" >
+      <div class="card-back card-face">
+        <img class="flower flower-top-left" src="Assets/Images/flower.png">
+
+        <img class="flower flower-bottom-right" src="Assets/Images/flower.png">
+        <img class="js" src="Assets/Images/flower1.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="Assets/Images/luau.png">
+      </div>
+    </div>
+    <div class="card" >
+      <div class="card-back card-face">
+        <img class="flower flower-top-left" src="Assets/Images/flower.png">
+
+        <img class="flower flower-bottom-right" src="Assets/Images/flower.png">
+        <img class="js" src="Assets/Images/flower1.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="Assets/Images/tree.png">
+      </div>
+    </div>
+    <div class="card" >
+      <div class="card-back card-face">
+        <img class="flower flower-top-left" src="Assets/Images/flower.png">
+
+        <img class="flower flower-bottom-right" src="Assets/Images/flower.png">
+        <img class="js" src="Assets/Images/flower1.png">
+      </div>
+      <div class="card-front card-face">
+        <img class="card-value" src="Assets/Images/tree.png">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
